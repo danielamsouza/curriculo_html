@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o tamanho das caixas inclua bordas */
+    font-family: 'Arial', sans-serif; /* Fonte simples e limpa */
+}
+
+body {
+    background-color: #f0f0f0; /* Fundo cinza claro na tela do PC */
+    display: flex;
+    justify-content: center; /* Centraliza a folha na tela */
+    padding: 20px;
+}
+
+/* 2. A FOLHA DE PAPEL */
+.pagina {
+    background-color: white;
+    width: 900px; /* Largura fixa parecida com A4 */
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* 3. CABEÇALHO (Onde fica o nome) */
+header {
+    background-color: #e8ded4; /* Aquele bege do topo */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+header .subtitulo {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* 4. LAYOUT DE COLUNAS (A mágica acontece aqui) */
+.conteudo {
+    display: flex; /* Isso coloca a esquerda e direita lado a lado */
+}
+
+/* Coluna da Esquerda */
+.coluna-esquerda {
+    width: 35%; /* Ocupa 35% da largura */
+    background-color: #fff; 
+    padding: 20px;
+    border-right: 1px solid #eee; /* Uma linha fina separando */
+}
+
+/* Coluna da Direita */
+.coluna-direita {
+    width: 65%; /* Ocupa o resto */
+    padding: 30px;
+}
+
+/* 5. A FOTO DE PERFIL */
+.foto-container {
+    text-align: center;
+    margin-top: -60px; /* Puxa a foto para cima, invadindo o bege */
+    margin-bottom: 20px;
+}
+
+.foto-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Faz ficar redonda */
+    object-fit: cover; /* Garante que a foto não fique esticada */
+    border: 5px solid white; /* Borda branca para destacar do fundo */
+}
+
+/* 6. ESTILIZAÇÃO DOS TEXTOS */
+h2, h3 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+p, li, span {
+    color: #333;
+    line-height: 1.5; /* Espaçamento entre linhas */
+    font-size: 14px;
+}
+
+ul {
+    padding-left: 20px; /* Recuo dos tópicos */
+    margin-bottom: 20px;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.data {
+    color: #777;
+    font-size: 13px;
+    display: block; /* Faz a data ficar numa linha separada */
+    margin-bottom: 5px;
+}
+
+/* 7. ÍCONES E CONTATO */
+.contato p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre ícone e texto */
+}
+
+.sessao {
+    margin-bottom: 30px;
+}
+
+/* 8. BARRAS DE IDIOMA (O efeito visual) */
+.barra-cinza {
+    width: 100%;
+    background-color: #ddd;
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.barra-cor {
+    background-color: #d2b48c; /* Cor bege/marrom */
+    height: 100%;
+    border-radius: 4px;
+}
+
+.github {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}

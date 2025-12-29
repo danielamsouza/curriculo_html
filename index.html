@@ -1,90 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/css.css">
-    <title>Meu Primeiro Site HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo - Daniel Augusto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
   </head>
   <body>
-    <img src="/imagens/foto-de-perfil.jpeg" alt="foto de um rapaz, perfil proffissional" />
-    <h1><strong>Daniel Augusto</strong></h1>
-    <p>
-      <a href="https://aws.amazon.com/pt/what-is/full-stack-development/"target="_blank">FullStack Developer </a>
-    </p>
-    <p>Estudante de programação a 2 anos</p>
-    <hr />
-    <h2 class="minhas-habilidades"> <strong>Minhas habilidades</strong> </h2>
-    <ul>
-      <li>JavaScript</li>
-      <li>Python</li>
-      <li>HTML5</li>
-      <li>CSS</li>
-    </ul>
-    <h2> <strong>O que eu gosto de fazer</strong> </h2>
-    <ol>
-      <li>Jogar videogame</li>
-      <li>Cuidar do lar</li>
-      <li>Estudar programação</li>
-    </ol>
-    <h2>Experiencias profissionais</h2>
-    <table border="">
-      <thead>
-        <tr>
-          <th>Empresa</th>
-          <th>Cargo</th>
-          <th>Ano</th>
-          <th>Tempo de trabalho</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>VestCasa</td>
-          <td>Operador de loja</td>
-          <td>2021</td>
-          <td>2 anos</td>
-        </tr>
-        <tr>
-          <td>Lojas Renner</td>
-          <td>Operador de loja</td>
-          <td>2022</td>
-          <td>2 anos</td>
-        </tr>
-      </tbody>
-    </table>
-    <h2>Minhas Habilidades</h2>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Habilidade</th>
-          <th>Nivel de 1 a 10</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>HTML e CSS</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>JavaScript</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>Python</td>
-          <td>10</td>
-        </tr>
-      </tbody>
-    </table>
-    <h2>Meus projetos</h2>
-    <ul>
-      <li><a href="" target="_blank">Projeto com Python</a></li>
-      <li><a href="" target="_blank">Projeto com JavaScript</a></li>
-    </ul>
-    <h2>
-      Entre em
-      <a href="/biografia-css/outras-paginas/contato.html" target="_blank"
-        >contato</a
-      >
-    </h2>
+    <div class="pagina">
+      <header>
+        <h1>Daniel Augusto Martins de Souza</h1>
+      </header>
+      <div class="conteudo">
+        <aside class="coluna-esquerda">
+          <div class="foto-container">
+            <img src="foto-de-perfil.jpg" alt="Foto Daniel">
+          </div>
+          <div class="contato">
+            <p><i class="fas fa-phone"></i> +55 (19) 99204 4433</p>
+            <p><i class="fas fa-envelope"></i> danielamsouza00@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Campinas, SP</p>
+          </div>
+          <div class="sessao">
+            <h3>RESUMO</h3>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas buscando oportunidade de estágio ou nível júnior em Desenvolvimento Front-End/Web. Possuo sólida base em lógica de programação (Python) e facilidade para aprender novas sintaxes, com foco atual na criação de interfaces web com HTML, CSS e Javascript.</p>
+          </div>
+          <div class="sessao">
+            <h3>COMPETÊNCIAS</h3>
+            <ul>
+              <li>Python (Intermediário)</li>
+              <li>Javascript (Básico)</li>
+              <li>HTML e CSS (Básico)</li>
+              <li>Figma (Básico)</li>
+              <li>Excel (Básico)</li>
+            </ul>
+          </div>
+          <div class="sessao">
+            <h3>IDIOMAS</h3>
+            <p>Português</p>
+            <div class="barra-cinza">
+              <div class="barra-cor" style="width: 100%;"></div>
+            </div>
+            <p>Inglês</p>
+            <div class="barra-cinza">
+              <div class="barra-cor" style="width: 50%;"></div>
+            <p>Espanhol</p>
+            <div class="barra-cinza">
+              <div class="barra-cor" style="width: 30%;"></div>
+            </div>
+          </div>
+          <div class="github">
+              <i class="fab fa-github"></i> github.com/danielamsouza
+          </div>
+        </aside>
+        <main class="coluna-direita">
+
+                <div class="sessao-principal">
+                    <h2>FORMAÇÃO ACADÊMICA</h2>
+                    
+                    <div class="item">
+                        <h4>Ensino Médio Completo | Fundação Bradesco</h4>
+                        <span class="data">2015 – 2018 (Campinas, SP)</span>
+                        <p>Durante o ensino médio, desenvolvi habilidades em comunicação e raciocínio lógico.</p>
+                    </div>
+
+                    <div class="item">
+                        <h4>Análise e Desenvolvimento de Sistemas | Uninter</h4>
+                        <span class="data">Cursando (Campinas, SP)</span>
+                        <p>O curso proporciona conhecimentos práticos em desenvolvimento web.</p>
+                    </div>
+                </div>
+
+                <div class="sessao-principal">
+                    <h2>EXPERIÊNCIA</h2>
+
+                    <div class="item">
+                        <h4>Auxiliar de Loja | Lojas Renner SA</h4>
+                        <span class="data">2023 – 2024 (Campinas, SP)</span>
+                    </div>
+
+                    <div class="item">
+                        <h4>Curso de Python | TipsCode</h4>
+                        <span class="data">2024 – 2025 (Campinas, SP)</span>
+                        <p>Treinamento prático sobre lógica de programação.</p>
+                    </div>
+                </div>
+
+            </main>
+      </div>
+    </div>
   </body>
 </html>
